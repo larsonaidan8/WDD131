@@ -1,0 +1,27 @@
+body {
+    max-width: 800px;
+    margin:auto;
+    
+    
+    
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-style: bold;
+    text-align: center;
+}
+
+h2 {
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-style: italic;
+margin: 50px;
+
+}
+
+.cheese {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 17px;
+    margin: 4px;
+}
