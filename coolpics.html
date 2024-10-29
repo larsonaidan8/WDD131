@@ -12,15 +12,15 @@
 <body>
     <header>
         <h1>Cool Pics <span>📷</span></h1>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">People</a></li>
-                <li><a href="#">Places</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+        <button id="menuButton">Menu</button>
+    <nav id="menu" class="hide">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
     </header>
 
     <main>
@@ -36,6 +36,11 @@
             <figure><img src="Norris-full.png" alt="Cool Image 8"></figure>
             <figure><img src="Norris-full.png" alt="Cool Image 9"></figure>
         </section>
+        <div class="viewer hide">
+            <button class="close-viewer">X</button>
+            <img src="" alt="Image Viewer" id="viewerImage">
+        </div>
+        
     </main>
 
     <footer>
