@@ -1,0 +1,59 @@
+<!-- Contact Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with Larson's Custom Garage for all your car needs.">
+    <title>Contact - Larson's Custom Garage</title>
+    <link rel="stylesheet" href="car.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Larson's_Custom_Garage.webp" alt="Larson's Custom Garage Logo">
+            <h1>Larson's Custom Garage</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="car.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Have a question or need assistance? Fill out the form below, and we’ll get back to you as soon as possible.</p>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+            <script>
+                document.getElementById('myForm').addEventListener('submit', function(event) {
+                    event.preventDefault(); // Prevent form submission
+                    window.location.href = 'confirmation.html'; // Redirect to confirmation page
+                });
+            </script>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Larson's Custom Garage. All rights reserved.</p>
+    </footer>
+  
+</body>
+</html>
