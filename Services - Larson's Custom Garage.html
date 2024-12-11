@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the services offered by Larson's Custom Garage.">
+    <title>Services - Larson's Custom Garage</title>
+    <link rel="stylesheet" href="car.css">
+</head>
+<body id="service">
+    <header>
+        <div class="logo">
+            <img src="Larson's_Custom_Garage.webp" alt="Larson's Custom Garage Logo">
+            <h1>Larson's Custom Garage</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="car.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="services">
+            <h2>Our Services</h2>
+            <div class="service-item">
+                <h3>Oil Change</h3>
+                <p>Keep your engine running smoothly with our quick and affordable oil changes.</p>
+                <p><strong>Price:</strong> $89.99</p>
+                <img src="oil_change.jpg" alt="Oil change in progress">
+            </div>
+
+            <div class="service-item">
+                <h3>Tire Rotation</h3>
+                <p>Extend the life of your tires with our expert tire rotation services.</p>
+                <p><strong>Price:</strong> $29.99</p>
+                <img src="tire_rotation.jpeg" alt="Tire rotation in progress">
+            </div>
+
+            <div class="service-item">
+                <h3>Custom Body Kits</h3>
+                <p>Stand out on the road with our custom-designed body kits tailored to your style.</p>
+                <p><strong>Price:</strong> Starting at $1,200</p>
+                <img src="body_kits.webp" alt="Custom body kit on a car">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Larson's Custom Garage. All rights reserved.</p>
+    </footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
