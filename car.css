@@ -2,8 +2,9 @@
 body {
     margin: 3em;
     font-family: Arial, sans-serif;
-    color: #333;
-    background-color: #732525;
+    color: #dcd7d7;
+    background-color: #561818;
+    
 }
 
 header {
@@ -15,6 +16,9 @@ header {
     align-items: center;
 }
 
+h3, p, h1 {
+    color: white
+}
 
 
 .logo {
